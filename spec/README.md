@@ -1,12 +1,12 @@
 # Ready to implement Conduit in a new framework?
 
-1. **Check and see if there any [github issues](https://github.com/gothinkster/realworld/issues) for the framework** you want to implement.
+1. **Check and see if there any [work in progress](https://github.com/gothinkster/realworld/discussions/categories/wip-implementations) for the framework** you want to implement.
 
 2. If someone else has started working on an implementation, **consider jumping in and helping them!**
 
 3. Otherwise, feel free to **[fork our starter kit](https://github.com/gothinkster/realworld-starter-kit) and get started**
 
-4. **Create a new issue** for your framework & link to your repo
+4. Submit the implementation [here](https://codebase.show/projects/realworld)
 
 
 ### [Fork our starter kit >>>](https://github.com/gothinkster/realworld-starter-kit)
@@ -59,7 +59,22 @@ That said, we do _prefer_ that every repo includes excellent tests that are exem
 
 ### Using the hosted API
 
-Simply point your [API requests](../api/) to `https://conduit.productionready.io/api` and you're good to go!
+> To fix performance issues and the presence of NSFW content on the current API, we encourage you to use the new temporary API : `https://realworld-temp-api.herokuapp.com/api`
+> Please keep in mind we'll soon move back to `https://conduit.productionready.io/api`
+
+API URL : https://realworld-temp-api.herokuapp.com/api (this url exposes a swagger documentation too)
+
+#### Limitations
+
+If the hosted API receives no traffic in a 30-minute period, it will sleep.
+In such a situation, there will be a additional delay on the first request.
+
+The usage of the hosted API is free and unlimited.
+However, the visibility of the created content is limited :
+- logged out users see only content created by demo accounts
+- logged in users see only their content and the content created by demo accounts
+
+Articles, Tags, and Comments are deleted on Sundays to avoid additional costs
 
 ### Unit test(s)
 
@@ -111,7 +126,12 @@ Include _at least_ **one** unit test in your repo to demonstrate how testing wor
 
 ### Using the hosted API
 
-Simply point your [API requests](../api/) to `https://conduit.productionready.io/api` and you're good to go!
+> To fix performance issues and the presence of NSFW content on the current API, we encourage you to use the new temporary API : https://realworld-temp-api.herokuapp.com/api`
+> Please keep in mind we'll soon move back to `https://conduit.productionready.io/api`
+
+API URL : https://realworld-temp-api.herokuapp.com/api    
+SWAGGER : https://realworld-temp-api.herokuapp.com/api-docs
+
 
 ### Styles/Templates
 
